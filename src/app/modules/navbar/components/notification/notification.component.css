@@ -1,0 +1,26 @@
+.notification-list {
+  position: fixed;
+  right: 8px;
+  top: 50px;
+  heigh:500px;
+  background-color: #fff;
+  width: 300px;
+  z-index: 1000;
+}
+
+.notification-list .mat-list-item {
+  cursor: pointer;
+}
+.notifications-item-info {
+  font-size : 17px;
+  color: hotpink;
+}
+button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-color: black;
+}
+button:hover {
+  color: hotpink;
+}
