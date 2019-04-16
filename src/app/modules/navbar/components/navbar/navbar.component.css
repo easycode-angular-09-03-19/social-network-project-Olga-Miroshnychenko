@@ -1,0 +1,21 @@
+.mat-toolbar {
+  background-color: black;
+  color: white;
+  height: 95px;
+}
+li:hover {
+  color: hotpink;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+
+
