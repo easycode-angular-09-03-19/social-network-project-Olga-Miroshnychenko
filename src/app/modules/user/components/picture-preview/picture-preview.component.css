@@ -1,0 +1,13 @@
+
+div {
+  float: left;
+  position: relative;
+  width: 40%;
+  padding-bottom: 40%;
+  margin: 20px 40px;
+
+}
+div img {
+  width: 350px;
+  height: 250px;
+}
