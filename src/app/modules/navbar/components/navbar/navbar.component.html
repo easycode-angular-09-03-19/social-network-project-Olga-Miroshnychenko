@@ -1,0 +1,4 @@
+<mat-toolbar *ngIf="!isHidden" class="navbar">
+  My App
+  <a href="" *ngIf="userId" [routerLink]="['/users/', userId]">User profile</a>
+</mat-toolbar>
