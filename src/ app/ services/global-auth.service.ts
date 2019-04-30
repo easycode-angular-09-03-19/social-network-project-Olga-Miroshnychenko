@@ -5,10 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GlobalAuthService {
   get isLogin() {
-    if (localStorage.getItem('sn_app_token')) {
-      return true;
-    }
-    return false;
+    return !!localStorage.getItem('sn_app_token')
   }
 
   constructor() {
