@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import {ResetPasswordServerAnswer} from '../../interfaces/ResetPasswordServerAnswer';
-import { AuthService} from '../../services/auth.service';
+import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { AuthService } from "../../services/auth.service";
+import { ResetPasswordServerAnswer } from "../../interfaces/ResetPasswordServerAnswer";
 
 @Component({
   selector: 'app-reset-password-modal',
@@ -9,9 +9,8 @@ import { AuthService} from '../../services/auth.service';
   styleUrls: ['./reset-password-modal.component.css']
 })
 export class ResetPasswordModalComponent implements OnInit {
-  @Output ('modalClose') modalCloseEvent = new EventEmitter();
+  @Output('modalClose') modalCloseEvent = new EventEmitter();
   resetPasswordForm: FormGroup;
-
 
   constructor(
     private authService: AuthService,
