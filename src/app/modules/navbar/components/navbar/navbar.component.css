@@ -1,0 +1,11 @@
+.navbar {
+  background: black;
+  color: blueviolet;
+}
+.navbar li {
+  color: blueviolet;
+  margin-left: 30px;
+}
+a {
+  color: blueviolet;
+}

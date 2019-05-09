@@ -1,0 +1,18 @@
+.img-container {
+  float: left;
+  position: relative;
+  max-width:100%;
+  /*background-color: #6A5ACD;*/
+  max-height: 100%;
+  display: flex;
+  padding: 2px;
+
+
+}
+.css-adaptive {
+ max-width: 100%;
+  min-width: 190px;
+  height: 300px;
+  object-fit: fill;
+}
+

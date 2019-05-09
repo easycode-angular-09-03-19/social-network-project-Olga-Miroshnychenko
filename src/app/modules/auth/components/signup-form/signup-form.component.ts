@@ -55,4 +55,3 @@ export class SignupFormComponent implements OnInit {
     });
   }
 }
-
