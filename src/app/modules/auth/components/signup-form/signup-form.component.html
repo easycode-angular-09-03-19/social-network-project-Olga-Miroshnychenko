@@ -1,6 +1,6 @@
 <form
-[formGroup]="signUpForm"
-(ngSubmit)="onSubmit()"
+  [formGroup]="signUpForm"
+  (ngSubmit)="onSubmit()"
 >
   <mat-form-field class="w-90">
     <input
@@ -63,15 +63,15 @@
     </mat-error>
   </mat-form-field><br>
   <mat-form-field class="w-90">
-  <input
-    matInput
-    placeholder="Month of your birthday"
-    formControlName="date_of_birth_month"
-  >
-  <mat-error *ngIf="signUpForm.get('date_of_birth_month').hasError('required')">
-    Month of your birthday is <strong>required</strong>
-  </mat-error>
-</mat-form-field><br>
+    <input
+      matInput
+      placeholder="Month of your birthday"
+      formControlName="date_of_birth_month"
+    >
+    <mat-error *ngIf="signUpForm.get('date_of_birth_month').hasError('required')">
+      Month of your birthday is <strong>required</strong>
+    </mat-error>
+  </mat-form-field><br>
   <mat-form-field class="w-90">
     <input
       matInput

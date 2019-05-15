@@ -1,0 +1,17 @@
+.img-container {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: auto;
+  padding: 2px;
+  overflow: hidden;
+}
+.css-adaptive {
+  overflow: hidden;
+  position:relative;
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+}
+
+

@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="pictures-3" *ngIf="new.pictures.length>2">
+      <ng-container *ngFor="let picture of new.pictures" >
+        <img [src]="picture.url"  alt="photo"  class="pictures3">
+      </ng-container>
+    </div>
+  <div class="pictures" *ngIf="new.pictures.length<2">
+    <ng-container *ngFor="let picture of new.pictures" >
+    <img [src]="picture.url"  alt="photo"  class="photo">
+    </ng-container>
+  </div>
+<div class="info">
+  <img [src]="new.owner.avatar"  alt="photo" >
+  <h4>{{new.owner.full_name}}</h4>
+  <p>{{new.owner.country}}</p>
+  <p>Uploaded {{new.pictures.length}} photos</p>
+  <button
+    class="follow-button"
+    (click)="updateFollower()"
+  >{{ isFollowed? 'Following' : 'Follow'}}
+  </button>
+</div>
+
+</div>
+

@@ -1,0 +1,10 @@
+<div >
+  <h1>Discover inspiring</h1>
+  <img class="cover-image" alt='' src="https://images.wallpaperscraft.ru/image/les_nebo_tuman_gory_110519_3840x2160.jpg">
+</div>
+<div class="container">
+  <ng-container *ngFor="let item of winners">
+    <app-winners-item [winner]="item" [info]="item" ></app-winners-item>
+  </ng-container>
+</div>
+

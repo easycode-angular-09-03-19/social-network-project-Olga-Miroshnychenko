@@ -1,0 +1,25 @@
+.navbar {
+  background: black;
+  color: blueviolet;
+  height: 80px ;
+}
+.navbar li {
+  color: blueviolet;
+  list-style-type: none;
+}
+a {
+  color: blueviolet;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding-right: 10px;
+}
+.logo {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  margin-top: -8px;
+}
+.user {
+  margin-right: 9%;
+}
+

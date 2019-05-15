@@ -1,0 +1,11 @@
+<label> Upload photo <input
+    style="visibility:hidden;"
+    type="file"
+    class="upload-photo"
+    (change)="uploadPhoto($event.target)"
+  ></label>
+<ng-container *ngFor="let image of images">
+  <app-picture-preview [img]="image">
+  </app-picture-preview>
+  </ng-container>
+
