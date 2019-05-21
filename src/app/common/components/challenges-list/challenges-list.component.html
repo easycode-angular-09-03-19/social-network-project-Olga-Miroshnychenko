@@ -1,0 +1,9 @@
+<div >
+  <h1>Discover inspiring</h1>
+  <img class="cover-image" alt='' src="https://wallpapershome.ru/images/wallpapers/oboi-epl-5120x2880-5k-4k-8k-les-gori-doroga-3954.jpg">
+</div>
+<div class="challenge-list">
+<ng-container *ngFor="let item of challenges">
+  <app-challenge-card [challenge]="item"></app-challenge-card>
+</ng-container>
+</div>

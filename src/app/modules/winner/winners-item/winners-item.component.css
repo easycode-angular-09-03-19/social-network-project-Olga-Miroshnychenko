@@ -1,0 +1,44 @@
+.img-container {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: auto;
+  padding: 2px;
+  overflow: hidden;
+}
+.css-adaptive {
+  overflow: hidden;
+  position:relative;
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+}
+
+.fa-heart {
+  color: pink;
+  font-size: 1.5rem;
+  margin-top: -50px;
+  z-index: 1000;
+}
+
+.fa-heart:hover {
+  color: #ef39c2;
+}
+
+.fa-thumbs-up,
+.fa-eye {
+  color: darkviolet;
+}
+
+.fa-eye {
+  margin-left: 1.5rem;
+}
+span {
+  color: ghostwhite;
+}
+.like-container{
+  position: absolute;
+  top: 10px;
+  z-index: 2000;
+  padding-left:10px;
+}

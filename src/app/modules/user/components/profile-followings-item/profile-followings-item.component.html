@@ -1,0 +1,16 @@
+<div class="followings" >
+    <img  class='cover' [src]="follower.cover" alt="image" >
+  <div class="avatar">
+       <img [src]="follower.avatar" alt="image" >
+  </div>
+  <div class="info_followings">
+       <h5>{{follower.city}}</h5>
+       <h3>{{follower.full_name}}</h3>
+    <button
+      class="btn  follow-button"
+      (click)="updateFollower()"
+    >{{ isFollowed? 'Following' : 'Follow'}}
+    </button>
+  </div>
+</div>
+

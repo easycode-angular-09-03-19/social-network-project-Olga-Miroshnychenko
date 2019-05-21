@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../services/auth.service';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { AuthService } from "../../services/auth.service";
+import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { Router } from "@angular/router";
 import { LoginServerAnswer } from '../../interfaces/LoginServerAnswer';
+import { GlobalAuthService } from '../../../../common/services/global-auth.service';
 
 @Component({
   selector: 'app-login-form',
@@ -16,12 +17,15 @@ export class LoginFormComponent implements OnInit {
   });
 
   constructor(
+    private globalAuthServece: GlobalAuthService,
     private authService: AuthService,
     private router: Router,
   ) { }
 
   ngOnInit() {
-
+    if ( this.globalAuthServece.token ) {
+      this.router.navigate(['/']);
+    }
   }
 
   onSubmit() {

@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="pictures3" *ngIf="new.pictures.length >3">
+    <ng-container >
+      <img [src]="new.pictures[0].url"  alt="photo"  class="photo3-1" >
+      <img [src]="new.pictures[1].url"  alt="photo"  class="photo3-2" >
+      <img [src]="new.pictures[2].url"  alt="photo"  class="photo3-3" >
+    </ng-container>
+  </div>
+    <div class="pictures3" *ngIf="new.pictures.length ===3">
+      <ng-container  >
+        <img [src]="new.pictures[0].url"  alt="photo"  class="photo3-1" >
+        <img [src]="new.pictures[1].url"  alt="photo"  class="photo3-2" >
+        <img [src]="new.pictures[2].url"  alt="photo"  class="photo3-3" >
+      </ng-container>
+    </div>
+  <div class="pictures2" *ngIf="new.pictures.length === 2 ">
+    <ng-container *ngFor="let picture of new.pictures" >
+      <img [src]="picture.url"  alt="photo"  class="photo2">
+    </ng-container>
+  </div>
+  <div class="pictures" *ngIf="new.pictures.length===1" >
+    <ng-container *ngFor="let picture of new.pictures" >
+    <img [src]="picture.url"  alt="photo"  class="photo">
+    </ng-container>
+  </div>
+<div class="info">
+  <a (click)="chooseUser()">
+    <img [src]="new.owner.avatar"  alt="photo" >
+  </a>
+  <h4>{{new.owner.full_name}}</h4>
+  <p>{{new.owner.country}}</p>
+  <p>Uploaded {{new.pictures.length}} photos</p>
+  <ng-container *ngIf="authId !== new?.owner._id">
+  <button
+    class="follow-button"
+    (click)="updateFollower()"
+  >{{ isFollowed? 'Following' : 'Follow'}}
+  </button>
+  </ng-container>
+</div>
+</div>
+
+
