@@ -1,0 +1,107 @@
+.info {
+  margin: 30px 30px 30px 13px;
+  background-color: whitesmoke;
+  width: 23%;
+  padding: 10px;
+  text-align: center;
+}
+.info img {
+  border-radius: 76px;
+  width: 60%;
+  height: auto;
+}
+.follow-button {
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 10px 30px;
+  overflow: hidden;
+  border: 2px solid #6A5ACD;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #800080;
+  transition: .30s ease-in-out;
+}
+.follow-button:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.follow-button:hover {
+  background:  #9370DB;
+  color: #fff;
+}
+.follow-button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+.pictures {
+  margin: 15px 30px 30px 30px;
+  width: 70%;
+  float: right;
+  overflow: hidden;
+  max-height: 60%;
+}
+.photo {
+  width: 100%;
+  object-fit: cover;
+  height: 295px;
+}
+.container {
+  width: 100%;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  max-height: 350px;
+
+}
+.pictures3{
+  margin: 15px 30px 30px 30px;
+  width: 70%;
+  float: right;
+  overflow: hidden;
+  max-height: 60%;
+}
+.photo3{
+  width: 33.33%;
+  object-fit: cover;
+  height: 280px;
+}
+.photo3-1{
+  width: 55%;
+  object-fit: cover;
+  height: 280px;
+  float: left;
+}
+.photo3-2{
+  width: 43.33%;
+  object-fit: cover;
+  height: 140px;
+  float: right;
+  padding-bottom: 7px;
+}
+.photo3-3{
+  padding-top: 5px;
+  width: 43.33%;
+  object-fit: cover;
+  height: 140px;
+  float: right;
+}
+.pictures2{
+  margin: 15px 30px 30px 30px;
+  width: 70%;
+  float: right;
+  overflow: hidden;
+  max-height: 60%;
+}
+.photo2{
+  width: 50%;
+  object-fit: cover;
+  height: 280px;
+  padding-right: 3px;
+}

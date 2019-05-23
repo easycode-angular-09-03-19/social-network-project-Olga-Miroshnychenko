@@ -1,0 +1,44 @@
+.img-container {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+.info-challenge  {
+  position: absolute;
+  width:88%;
+  z-index: 1000;
+}
+.aword {
+  background-color: black ;
+  opacity:0.5;
+  float: left;
+  color: white;
+  width: 50%;
+  margin-top: -49px;
+  text-align: center;
+  border-right: 2px solid blueviolet;
+}
+.votes {
+  text-align: center;
+  float: right;
+  color: white;
+  width: 50%;
+  margin-top: -49px;
+  z-index: 1000;
+  background-color: black ;
+  opacity:0.5;
+  border-left: 2px solid blueviolet;
+}
+.css-adaptive {
+  overflow: hidden;
+  position:relative;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+

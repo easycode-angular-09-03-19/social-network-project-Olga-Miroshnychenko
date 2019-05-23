@@ -1,0 +1,9 @@
+<div class="profile-cover" [style.backgroundImage]="'url(' + cover + ')'">
+  <label> Change Cover <input
+    style="visibility:hidden;"
+    type="file"
+    *ngIf="isCurrentUser"
+    class="upload-cover"
+    (change)="loadCover($event.target)"
+  ></label>
+</div>

@@ -1,0 +1,22 @@
+<!--<div class="tabs-container container">-->
+  <!--&lt;!&ndash;<ng-container [ngSwitch]="activeTab" >&ndash;&gt;-->
+    <!--&lt;!&ndash;<app-profile-favourites *ngSwitchCase="'favourites'"></app-profile-favourites>&ndash;&gt;-->
+    <!--&lt;!&ndash;<app-profile-selfies *ngSwitchCase="'selfies'"></app-profile-selfies>&ndash;&gt;-->
+  <!--&lt;!&ndash;</ng-container>&ndash;&gt;-->
+<!--</div>-->
+<ng-container [ngSwitch]="activeTab | async">
+  <ng-container *ngSwitchCase="'selfies'">
+    <app-profile-selfies></app-profile-selfies>
+  </ng-container>
+  <ng-container *ngSwitchCase="'favourites'">
+    <app-profile-favourites></app-profile-favourites>
+  </ng-container>
+  <ng-container *ngSwitchCase="'followers'">
+    <app-profile-followers></app-profile-followers>
+  </ng-container>
+  <ng-container *ngSwitchCase="'followings'">
+    <app-profile-followings></app-profile-followings>
+  </ng-container>
+</ng-container>
+
+

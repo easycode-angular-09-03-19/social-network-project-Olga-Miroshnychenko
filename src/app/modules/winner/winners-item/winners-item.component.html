@@ -1,0 +1,19 @@
+<ng-container *ngFor="let img of winner?.member_id.images">
+<div class="img-container">
+  <img  [src]="img.image_basic.url"   alt="photo" class="css-adaptive">
+  <div class="like-container">
+     <i class="fas fa-heart" [ngClass]="{ liked: winner?.isLiked === true }" (click)="onLikePicture(winner)"></i>
+     <span
+     ><i class="far fa-thumbs-up"></i>
+     {{ img.image_basic.likes.length }}</span
+     >
+     <span
+     ><i class="far fa-eye"></i>
+     {{img.image_basic.views.length }}</span
+     >
+  </div>
+</div>
+</ng-container>
+
+
+

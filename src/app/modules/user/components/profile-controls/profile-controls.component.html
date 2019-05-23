@@ -1,0 +1,42 @@
+<nav *ngIf="user">
+  <div class="img">
+    <img [src]="user?.avatar" alt="avatar" class="avatar">
+  </div>
+  <div class=" info">
+  <span><a
+    href=""
+    [routerLink]="['/users', user._id]"
+  >{{user.full_name}}</a>
+  </span><br>
+  <span><a
+    href="https://goo.gl/maps/KpWocEgbhxhPSKSw9"
+  >{{user.country}}</a>
+  </span>
+  </div>
+  <ul class="tab-controls">
+    <li>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWEVimRVStdPNCYPwJy2yNKqU4dzDa3JEcM1LvunhI8kILz7Wr" alt="points"
+             width="25px"
+             style="border-radius: 42px"
+       >
+      <a href=""
+         [routerLink]="['/users', user._id]"
+       > Points {{ user?.rank.points }}
+      </a>
+    </li>
+    <li *ngFor="let item of tabList">
+      <a
+        href=""
+        [routerLink]="['/users', user._id]"
+        [queryParams]="{ tab: item.tab }"
+        [ngClass]="{ active: (activeTab | async) === item.tab }"
+      >
+        {{ item.text }}
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+

@@ -1,0 +1,11 @@
+<mat-toolbar *ngIf="!isHidden" class="navbar">
+  <a href="/" routerLink="/"><img class="logo" alt="" src="http://www.sccpre.cat/png/big/70/701422_white-camera-png.png"> </a>
+  <li><a href=""[routerLink]="['/winners']">Winners</a></li>
+  <li><a href=""[routerLink]="['/news']">News Feed</a></li>
+  <li><a href="#">Challenges</a></li>
+  <div class="user">
+  <span><a href="" *ngIf="userId" [routerLink]="['/users/', userId]"><i class="fa fa-user-circle" aria-hidden="true"></i></a></span>
+  <span><a href="#"><app-notification [notifications]="notifications"></app-notification></a></span>
+  </div>
+</mat-toolbar>
+
